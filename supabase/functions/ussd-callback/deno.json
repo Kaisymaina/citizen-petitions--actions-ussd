@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window", "dom", "dom.iterable"],
+    "strict": true
+  },
+  "tasks": {
+    "serve": "supabase functions serve ussd-callback --no-verify-jwt"
+  }
+}

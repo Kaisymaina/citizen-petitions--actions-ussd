@@ -1,0 +1,6 @@
+# Per-function Edge Function configuration (used by the Supabase CLI).
+# The USSD callback is a public webhook from Africa's Talking — it does NOT
+# carry a Supabase JWT, so JWT verification is disabled at the platform layer.
+# Authentication is handled inside the function via the x-ussd-secret header.
+[functions.ussd-callback]
+verify_jwt = false
